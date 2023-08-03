@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+        <style>
+            html, body{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            a{
+                color: rgba(0,119,204,1);
+            }
+            #container{
+                width: 100%;
+		margin: 0 auto;
+            }
+            .container_item{
+                padding: 0 80px;
+                /* width: 100%; */
+                max-width: 1280px;
+                margin-bottom: 40px;
+                font-family: Lato, sans-serif;
+                font-size: 16px;
+                float:left;
+            }
+            .container_item_title{
+                font-family: Lato, sans-serif;
+                font-size: 20px;
+                padding-top: 16px;
+                padding-bottom: 10px;
+                margin-top: 20px;
+            }
+            #head{
+                height: 340px;
+                background-image: url('simple-header-blended-small.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgba(0,149,255,1);
+                text-align: center;
+                position: relative;
+                margin-bottom: 60px;
+                width: 100%;
+                padding: 0;
+            }
+            #head .mask{
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                background-color: rgba(33,33,33,1);
+                opacity: 0.4;
+                display: block;
+                top:0;
+                left: 0;
+            }
+            #head_text{
+                font-family: Lato, sans-serif;
+                font-size: 34px;
+                font-weight: 300;
+                color:rgba(255,255,255,1);
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            #container{
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: 0;
+                max-width: 1280px;
+            }
+            #abstract_left{
+                font-family: Lato, sans-serif;
+                font-size: 16px;
+                text-align: justify;
+                line-height: 1.6667;
+                width: 55%;
+                float: left;
+            }
+            #abstract_right{
+                width: calc(45% - 22px);
+                margin-left:20px;
+                float: left;
+            }
+            #abstract_right img{
+		#border:solid 1px #999;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .content{
+                font-family: Lato, sans-serif;
+            }
+            .content_title{
+                padding: 10px 0;
+                line-height: 1.6667;
+            }
+            .content_item{
+                padding: 7px 0;
+                line-height: 1.6667;
+            }
+
+	    #samples img{
+		width: 75%;
+		margin-top: 20px;
+		#border: solid 1px #999;
+	    }
+	    #performance img{
+		width: 75%;
+		margin-top: 20px;
+                #border: solid 1px #999;		
+	    }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="head" class="container_item">
+                <div class="mask"></div>
+                <div id="head_text">Emotional Attention: A Study of Image Sentiment and Visual Attention</div>
+            </div>
+            <div id="abstract" class="container_item">
+                <div class="container_item_title">Abstract</div>
+                <div class="content">
+                    <div id="abstract_left">
+                        Image sentiment influences visual perception. Emotion-eliciting stimuli such as happy faces and poisonous snakes are generally prioritized in human attention. However, little research has evaluated the interrelationships of image sentiment and visual saliency. In this paper, we present the first study to focus on the relation between emotional properties of an image and visual attention. We first create the EMOtional attention dataset (EMOd). It is a diverse set of emotion-eliciting images, and each image has (1) eye-tracking data collected from 16 subjects, (2) intensive image context labels including object contours, object sentiments, object semantic category, and high-level perceptual attributes such as image aesthetics and elicited emotions. We perform extensive analyses on EMOd to identify how image sentiment relates to human attention. We discover an emotion prioritization effect: for our images, emotion-eliciting content attracts human attention strongly, but such advantage diminishes dramatically after initial fixation. Aiming to model the human emotion prioritization computationally, we design a deep neural network for saliency prediction, which includes a novel subnetwork that learns the spatial and semantic context of the image scene. The proposed network outperforms the state-of-the-art on three benchmark datasets, by effectively capturing the relative importance of human attention within an image.
+                    </div>
+                    <div id="abstract_right">
+                        <img src="sample_1.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div id="resources" class="container_item">
+                <div class="container_item_title">Resources</div>
+                <div class="content">
+                    <div class="content_title">Papers:</div>
+                    <div class="content_item">S. Fan, Z. Shen, M. Jiang, B. Koenig, J. Xu, M. Kankanhali, Q.Zhao, "Emotional Attention: A Study of Image Sentiment and Visual Attention ",  IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 (Spotlight oral, acceptance rate: 6.6%).  
+			[<a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/2361.pdf">pdf</a>]
+			[<a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/2361_supp.pdf"/>supplementary</a>]
+			[<a href="javascript:document.getElementById('block_code').scrollIntoView(true);">code</a>]
+			[<a href="javascript:document.getElementById('block_dataset').scrollIntoView(true);">dataset</a>]
+		    </div>
+                    <div class="content_item">S. Fan, M. Jiang, J. Xu, B. Koenig, Y. Cheng, M. Kankanhali, Q.Zhao, "A Correlational Study Between Human Attention and High-level Image Perception",  Journal of Vision, 2017. [<a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/VSS_abstract_Shaojing.pdf">pdf</a>]</div>    
+                    
+                    <div class="content_title" id="block_dataset">Data:</div>
+                    <div class="content_item">Image Stimuli: <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/EMOdImages1019.zip">1019 Images</a> (82.3 MB)</div>
+                    <div class="content_item">Fixation Maps (both continuous and binary): <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/FixationMap.zip">1019 Images</a> (13.7 MB)</div>
+                    <div class="content_item">Raw Eye-tracking Data: <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/fixations1019_renamed.mat">Matlab MAT</a> (2.3 MB)</div>
+                    <div class="content_item">Labelled Object Contours and Attributes: <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/AllLabelData1019.mat">Matlab MAT</a> (776 KB)</div>
+                    <div class="content_item">Image-level Annotation: <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/allfindata1019_renamed.mat">Matlab MAT</a> (64 KB)</div>
+                        
+                    <div class="content_title" id="block_code">Code:</div>
+                    <div class="content_item">CNN model for saliency prediction.</div>
+		    <div class="content_item">Jupyter Notebook Code: <a href="code.zip">Download</a></div>
+		    <div class="content_item">Model: <a href="https://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/CVPR2018/salicon_generator_sigmoid_epoch_25.h5">Download</a></div>
+		    <div class="content_item">Code for metrics and evaluation (Python implementation of the code for metrics and evaluation on MIT Saliency Benchmark): <a href="metrics_python.zip">Download</a></div>
+                </div>
+                    
+                    <div class="content_title" id="block_other_resource">Other resources:</div>
+                    <div class="content_item">We have conducted additional research on visual sentiment perception. For more information, please visit our <a href="https://ncript.comp.nus.edu.sg/site/ncript-top/sentiment/">project website</a>.</div>
+                    
+                                <div class="content_item">We have an improved model (CASNet II) for Saliency Prediction. You can try out the improved model <a href='http://ncript.comp.nus.edu.sg/site/nus-files/emotionattention/casnet%20ii%20code.zip'>here</a>.</div>
+
+            </div>
+            
+  
+
+            <div id="samples" class="container_item">
+                <div class="container_item_title">Sample Images from EMOtional Attention Dataset (EMOd)</div>
+                <img src="sample_2.jpg"/>
+            </div>
+      	    <div id="samples" class="container_item">
+           	<div class="container_item_title">Saliency prediction by the proposed CASNet</div> 
+ 	   	<img src="performance.jpg"/>
+	    </div>	
+	    <!--
+	    <div id="copyright" class="container_item">
+                Copyright © 2016 - All Rights Reserved - <a href="http://www-users.cs.umn.edu/~qzhao/index.html">UMN VIP</a>
+            </div>
+	    -->
+        </div>
+    </body>
+	<script type="text/javascript">
+		window.onload = function(){
+               		var url_string = window.location.href;
+                	var url = new URL(url_string);
+                	var loc_blk = url.searchParams.get("loc_blk");
+                	if(loc_blk != undefined && loc_blk != ''){
+                        	var el = document.getElementById(loc_blk);
+				el.scrollIntoView(true);
+                	}
+		}
+        </script>
+</html>
